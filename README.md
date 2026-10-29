@@ -7,7 +7,7 @@ Yuanhang Zhou · AI Product Manager — personal portfolio site.
 - `index.html`：启动终端层 + ABOUT / PRODUCT / TOOL / NOTES / CONTACT 五个视图
 - `assets/style.css`：设计系统与组件样式
 - `assets/app.js`：启动动画、视图路由、卡片轮播、文章网格数据
-- `assets/monogram.svg`：头像位占位图，后续替换为本人照片时保持同尺寸（96×140 拍立得框）
+- `assets/portrait.svg`：ABOUT 视图拍立得卡中的本人照片（JPEG 内嵌，160×219，cover 裁切；替换时保持 82:112 比例）
 
 ## 本地预览
 
@@ -19,7 +19,7 @@ python3 -m http.server 8080
 
 ## 发布
 
-仓库 Settings → Pages → Source 选 `main` 分支 `/ (root)`，发布后访问 https://oniszczukthommy-wq.github.io/ 。
+用户主页仓库在 `main` 分支根目录维护，GitHub Pages 自动发布，访问 https://oniszczukthommy-wq.github.io/ 。
 
 ## 内容来源
 

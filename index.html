@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yuanhang Zhou · AI Product Manager · local-first AI tools and agents, from PRD to a runnable demo" />
+  <meta name="theme-color" content="#f4f7f9" />
+  <title>Yuanhang Zhou · AI Product Manager</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232e75e8'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='monospace' font-size='14' font-weight='700' fill='white'%3EYZ%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Kalam:wght@700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+
+  <!-- boot terminal overlay -->
+  <section class="terminal" id="bootTerminal" aria-label="Boot terminal">
+    <div class="terminal-titlebar">
+      <span class="t-dot red"></span><span class="t-dot yellow"></span><span class="t-dot green"></span>
+      <span class="t-title">yuanhang-os · login shell</span>
+    </div>
+    <div class="terminal-body" id="bootBody"></div>
+    <div class="boot-cta" id="bootCta">
+      <button class="cta-text" id="ctaText">Press Enter to Launch</button>
+      <div class="cta-arrow">↓</div>
+    </div>
+  </section>
+
+  <div class="wallpaper"></div>
+
+  <div class="site-shell" id="siteShell">
+    <header class="os-header">
+      <button class="os-mark" data-nav="about">
+        <span class="os-cursor"></span>
+        <span>YZH OS</span>
+      </button>
+      <span class="os-context" id="osContext">PRODUCT DECISION SYSTEM</span>
+    </header>
+
+    <div class="os-layout">
+      <nav class="os-sidebar" aria-label="网站主导航" id="navBar">
+        <button data-nav="about" class="is-active">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-3.3 3.6-5 8-5s8 1.7 8 5"/></svg></span>
+          <span>ABOUT<small style="display:block;color:var(--faint);font-size:9px">关于</small></span>
+        </button>
+        <button data-nav="product">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
+          <span>PRODUCT<small style="display:block;color:var(--faint);font-size:9px">产品 Demo</small></span>
+        </button>
+        <button data-nav="tool">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L4 17l3 3 4.7-4.7a4.5 4.5 0 0 0 6-6l-2.5 2.5-2.5-2.5z"/></svg></span>
+          <span>TOOL<small style="display:block;color:var(--faint);font-size:9px">工作台</small></span>
+        </button>
+        <button data-nav="notes">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg></span>
+          <span>NOTES<small style="display:block;color:var(--faint);font-size:9px">公开文章</small></span>
+        </button>
+        <button data-nav="contact">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <span>CONTACT<small style="display:block;color:var(--faint);font-size:9px">联系我</small></span>
+        </button>
+      </nav>
+
+      <div class="main-window">
+        <div class="window-titlebar">
+          <div class="traffic-lights">
+            <span class="traffic-light red"></span><span class="traffic-light yellow"></span><span class="traffic-light green"></span>
+          </div>
+          <span class="window-path" id="windowPath">~/yuanhang-os/about</span>
+          <span class="window-minimize"></span>
+        </div>
+
+        <div class="workspace-stage">
+
+          <!-- ABOUT -->
+          <section class="workspace-view about-view is-active" id="view-about">
+            <div class="identity-panel">
+              <span class="section-kicker">HELLO, I'M</span>
+              <h1>Yuanhang Zhou</h1>
+              <div class="role-title">AI Product Manager · Local-first Agents</div>
+              <div class="identity-rule"></div>
+              <p class="hero-statement">
+                I build local-first AI tools and agents:<br/>
+                from PRD and user research all the way to a demo you can actually run.
+              </p>
+              <div class="proof-line">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>
+                <span>Music education background · teaching practice · self-driven AI product build</span>
+              </div>
+              <div class="handwritten-formula">
+                <span>User Insight</span> <b>×</b> <span>Product Definition</span> <b>×</b> <span>Shippable Demo</span>
+              </div>
+              <div class="hero-actions">
+                <button class="primary-action" data-nav="product">查看产品案例</button>
+                <a class="text-action" href="https://github.com/oniszczukthommy-wq" target="_blank" rel="noreferrer">打开 GitHub →</a>
+              </div>
+              <div class="portrait-rig">
+                <div class="portrait-card">
+                  <img src="./assets/monogram.svg" alt="Y.Z. portfolio monogram placeholder" />
+                  <figcaption>Y.Z. · PORTFOLIO</figcaption>
+                </div>
+                <span class="portrait-clip">⚋</span>
+              </div>
+            </div>
+
+            <div class="decision-system">
+              <div class="system-heading">
+                <span></span><h2>PRODUCT DECISION SYSTEM</h2><span></span>
+              </div>
+              <div class="decision-network">
+                <div class="decision-core">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><circle cx="12" cy="12" r="6"/></svg>
+                  <strong>AI Products<br/>&amp; Tools</strong>
+                  <small>LOCAL-FIRST · HUMAN GATED</small>
+                </div>
+                <button class="decision-lane lane-blue" data-nav="product">
+                  <div class="map-node">
+                    <span class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
+                    <span><small>01 · TECH UNDERSTANDING</small><strong>问题定义</strong><p>读懂模型能力与边界，把复杂约束翻译成清晰问题。</p></span>
+                  </div>
+                  <span class="signal-path"></span>
+                  <span></span>
+                  <span class="signal-path"></span>
+                  <div class="map-node">
+                    <span class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+                    <span><small>02 · EVIDENCE GATE</small><strong>证据闸门</strong><p>引用白名单、评分反查，不让模型编造链接与分数。</p></span>
+                  </div>
+                </button>
+                <button class="decision-lane lane-green" data-nav="product">
+                  <div class="map-node">
+                    <span class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-3.3 3.6-5 8-5s8 1.7 8 5"/></svg></span>
+                    <span><small>03 · USER INSIGHT</small><strong>方案取舍</strong><p>从场景与行为出发，判断什么值得做、先做什么。</p></span>
+                  </div>
+                  <span class="signal-path"></span>
+                  <span></span>
+                  <span class="signal-path"></span>
+                  <div class="map-node">
+                    <span class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></span>
+                    <span><small>04 · PRD LEDGER</small><strong>需求账本</strong><p>PRD 版本化留存，每个 AI 修改先出 diff 再由本人确认。</p></span>
+                  </div>
+                </button>
+                <button class="decision-lane lane-amber" data-nav="tool">
+                  <div class="map-node">
+                    <span class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h18M12 3v18"/><circle cx="12" cy="12" r="9"/></svg></span>
+                    <span><small>05 · COST &amp; RISK</small><strong>成本护栏</strong><p>付费任务设预算上限与去重，结果不确定时不盲目重试。</p></span>
+                  </div>
+                  <span class="signal-path"></span>
+                  <span></span>
+                  <span class="signal-path"></span>
+                  <div class="map-node">
+                    <span class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.1V12a10 10 0 1 1-5.9-9.1"/><path d="M22 4 12 14l-3-3"/></svg></span>
+                    <span><small>06 · CLOSED LOOP</small><strong>落地闭环</strong><p>本地优先、密钥不入库、产物可校验，用可验证结果迭代。</p></span>
+                  </div>
+                </button>
+              </div>
+              <div class="decision-explainer">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                <span>同步能力：问题定义 → 方案取舍 → 落地闭环；模型给候选，代码守边界，人做最终决策。</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- PRODUCT -->
+          <section class="workspace-view" id="view-product">
+            <div class="work-showcase">
+              <div class="work-stage" id="productStage"></div>
+              <button class="work-carousel-nav work-carousel-prev" data-dir="-1" data-set="product" aria-label="上一张">‹</button>
+              <button class="work-carousel-nav work-carousel-next" data-dir="1" data-set="product" aria-label="下一张">›</button>
+              <div class="work-carousel-hint">‹ 点击切换 · <span id="productCount"></span> 个产品 Demo ›</div>
+            </div>
+          </section>
+
+          <!-- TOOL -->
+          <section class="workspace-view" id="view-tool">
+            <div class="work-showcase">
+              <div class="work-stage" id="toolStage"></div>
+              <button class="work-carousel-nav work-carousel-prev" data-dir="-1" data-set="tool" aria-label="上一张">‹</button>
+              <button class="work-carousel-nav work-carousel-next" data-dir="1" data-set="tool" aria-label="下一张">›</button>
+              <div class="work-carousel-hint">‹ 点击切换 · <span id="toolCount"></span> 个工作台 ›</div>
+            </div>
+          </section>
+
+          <!-- NOTES -->
+          <section class="workspace-view notes-view" id="view-notes">
+            <div class="notes-side">
+              <span class="section-kicker">WRITING · PUBLIC</span>
+              <h2 class="notes-title">公开文章</h2>
+              <p>从产品视角记录 AI 模型能力、Agent 评测与个人产品实践；每一篇都对应一个亲手验证过的问题。</p>
+            </div>
+            <div class="notes-grid" id="notesGrid"></div>
+          </section>
+
+          <!-- CONTACT -->
+          <section class="workspace-view contact-view" id="view-contact">
+            <div class="contact-copy">
+              <span class="section-kicker">GET IN TOUCH</span>
+              <h1>联系我，<br/>或继续查看公开作品。</h1>
+              <p>邮箱用于正式沟通；GitHub 与小红书用于查看公开内容与迭代记录。</p>
+              <a class="primary-action" href="mailto:oniszczukthommy@gmail.com">发邮件给我</a>
+            </div>
+            <aside class="contact-status">
+              <div class="contact-channels">
+                <a href="mailto:oniszczukthommy@gmail.com">
+                  <span class="channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+                  <span><small>EMAIL</small><strong>oniszczukthommy@gmail.com</strong></span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+                <a href="https://github.com/oniszczukthommy-wq" target="_blank" rel="noreferrer">
+                  <span class="channel-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 8.84 21.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></span>
+                  <span><small>GITHUB</small><strong>@oniszczukthommy-wq</strong></span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+                <a href="https://www.xiaohongshu.com/user/profile/5cd98bab0000000010005b08" target="_blank" rel="noreferrer">
+                  <span class="channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg></span>
+                  <span><small>XIAOHONGSHU</small><strong>小红书 · 产品实践笔记</strong></span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+              </div>
+            </aside>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="terminal-strip">
+      <span><b>$</b> open yuanhang.os — local-first product workspace</span>
+      <span class="system-status"><i></i>SYSTEM READY</span>
+    </footer>
+  </div>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>

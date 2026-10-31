@@ -1,80 +1,235 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="周远航的个人作品集：从音乐教育与教学实践出发，探索 AI 产品、创作工具与人机协作。六个项目、产品思考与公开文章。">
-<meta name="theme-color" content="#f4f7f9"><meta property="og:title" content="周远航 · AI 产品与创作工具"><meta property="og:description" content="从用户问题到可以体验的原型。探索音乐、影视、游戏与 AI 工作台。"><meta property="og:type" content="website"><meta property="og:url" content="https://oniszczukthommy-wq.github.io/">
-<link rel="canonical" href="https://oniszczukthommy-wq.github.io/">
-<title>周远航 Yuanhang Zhou · AI 产品作品集</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232e75e8'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='monospace' font-size='14' font-weight='700' fill='white'%3EYZ%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="./assets/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yuanhang Zhou · AI Product Manager · local-first AI tools and agents, from PRD to a runnable demo" />
+  <meta name="theme-color" content="#f4f7f9" />
+  <title>Yuanhang Zhou · AI Product Manager</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232e75e8'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='monospace' font-size='14' font-weight='700' fill='white'%3EYZ%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Kalam:wght@700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body>
-<a class="skip-link" href="#main">跳到主要内容</a>
-<div class="site-shell">
-<header class="os-header"><a class="os-mark" href="#about"><span class="cursor-mark"></span> YZH OS <small>PERSONAL WORKSPACE</small></a><span class="header-status"><i></i> 持续构建，持续验证</span><button class="terminal-toggle" id="terminalToggle" hidden>打开终端 ↗</button></header>
-<div class="os-layout">
-<nav class="os-sidebar" aria-label="网站主导航">
-<a href="#about" data-nav="about"><span class="nav-icon">◎</span><span>ABOUT<small>关于我</small></span></a>
-<a href="#projects" data-nav="projects"><span class="nav-icon">▦</span><span>PROJECTS<small>六个项目</small></span></a>
-<a href="#practice" data-nav="practice"><span class="nav-icon">⌘</span><span>PRACTICE<small>产品实践</small></span></a>
-<a href="#notes" data-nav="notes"><span class="nav-icon">≡</span><span>NOTES<small>公开文章</small></span></a>
-<a href="#contact" data-nav="contact"><span class="nav-icon">↗</span><span>CONTACT<small>联系我</small></span></a>
-<a class="sidebar-github" href="https://github.com/oniszczukthommy-wq" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-</nav>
-<main id="main" class="main-window" tabindex="-1">
-<div class="window-titlebar"><span class="traffic-lights" aria-hidden="true"><i></i><i></i><i></i></span><span id="windowPath">~/yuanhang-os/about</span><span class="window-label">PORTFOLIO / 2026</span></div>
-<div class="workspace-stage">
-<section class="workspace-view" id="about" aria-labelledby="about-title">
-<div class="about-grid">
-<div class="identity-panel"><div class="identity-top"><span class="kicker">HELLO, I'M</span><figure class="portrait-card"><img src="./assets/portrait.svg" alt="周远航的个人照片" width="82" height="112"><figcaption>YUANHANG · ZHOU</figcaption></figure></div>
-<h1 id="about-title">Yuanhang<br>Zhou<span class="name-cn">周远航</span></h1>
-<p class="role-title">AI 产品 · 创作工具 · Agents</p>
-<div class="identity-rule"></div><p class="hero-statement">从一个真实问题，<br>到可以亲手体验的产品。</p>
-<p class="intro">我有音乐教育与教学经历，现在把对创作和用户体验的关注，带进 AI 产品实践。从需求梳理、流程设计到原型实现，我希望让想法成为能被使用、讨论和改进的作品。</p>
-<div class="hero-actions"><a class="primary-action" href="#projects">探索我的项目 <span>→</span></a><a class="text-action" href="#contact">联系我 ↗</a></div>
-<p class="education">洛阳师范学院 · 音乐教育 · 2023<br>教学实践 → AI 产品与人机协作</p></div>
-<div class="overview-panel"><div class="panel-heading"><span class="kicker">SELECTED WORK</span><a href="#projects">查看全部 06 ↗</a></div><h2>把兴趣做成工具，<br>把想法做成体验。</h2><p class="muted">音乐、影视、游戏，以及支撑创作和产品工作的 AI 工作台。</p><div id="projectIndex" class="project-index"><a class="project-shortcut" href="#project-music"><span class="shortcut-num">01</span><span><strong>Osmanthus</strong><small>从灵感、写词到歌曲编辑与导出</small></span><span class="arrow">↗</span></a><a class="project-shortcut" href="#project-blue"><span class="shortcut-num">02</span><span><strong>Blue</strong><small>连接产品研究、需求、文档和任务</small></span><span class="arrow">↗</span></a><a class="project-shortcut" href="#project-detective"><span class="shortcut-num">03</span><span><strong>夜班档案</strong><small>通过对话和物证，拼出案件真相</small></span><span class="arrow">↗</span></a><a class="project-shortcut" href="#project-shot"><span class="shortcut-num">04</span><span><strong>Shot Agent</strong><small>找电影、找台词，也找到可核对的来源</small></span><span class="arrow">↗</span></a><a class="project-shortcut" href="#project-vision"><span class="shortcut-num">05</span><span><strong>端侧 AI Studio</strong><small>在本机画布中组织素材、任务与导出</small></span><span class="arrow">↗</span></a><a class="project-shortcut" href="#project-guitar"><span class="shortcut-num">06</span><span><strong>弦间</strong><small>用键盘、触屏或手势，完成一次弹唱</small></span><span class="arrow">↗</span></a></div><div class="overview-note"><span class="status-dot"></span><p>每个项目都写清楚：解决什么问题、如何使用，以及目前做到哪一步。</p></div></div>
-</div>
-<div class="about-bottom"><span>USER NEEDS</span><b>→</b><span>PRODUCT DESIGN</span><b>→</b><span>WORKING PROTOTYPE</span><b>→</b><span>FEEDBACK</span></div>
-</section>
-<section class="workspace-view" id="projects" aria-labelledby="projects-title">
-<header class="section-heading"><span class="kicker">SELECTED PROJECTS / 01—06</span><h2 id="projects-title">作品，和它们背后的问题。</h2><p>与 GitHub 置顶项目对应。打开案例了解工作流程与取舍，也可以前往公开介绍、源码或演示。</p></header>
-<div class="filter-bar" id="projectFilters" aria-label="项目分类" hidden><button data-filter="all" aria-pressed="true">全部 <span>6</span></button><button data-filter="creative" aria-pressed="false">创作与娱乐 <span>4</span></button><button data-filter="workspace" aria-pressed="false">工作台 <span>2</span></button><span id="filterStatus" role="status" aria-live="polite">显示 6 个项目</span></div>
-<div class="projects-grid" id="projectsGrid"><article class="project-card" id="project-music" data-category="creative" style="--accent:#98601b;--tint:#fbf2e4">
- <div class="project-cover"><div class="cover-top"><span>PROJECT 01 / CREATIVE</span><span class="cover-icon" aria-hidden="true">♫</span></div><div class="project-flow">创作想法 → 歌词确认 → 试听选择 → 分轨编辑</div></div>
- <div class="project-body"><h3>Osmanthus</h3><p class="project-subtitle">AI 音乐创作工作台</p><p class="project-desc">把音乐想法变成可以试听、修改和导出的歌曲。围绕中文流行歌曲创作，衔接歌词、两版歌曲对比、分轨修改与乐谱准备，并探索 MV 制作。</p><div class="project-tags"><span>音乐创作</span><span>分轨编辑</span><span>人在回路</span></div><p class="project-state">歌曲与音频编辑流程已验证；完整 MV 流程仍在验证。</p><div class="project-actions"><a href="https://github.com/oniszczukthommy-wq/ai-music-workbench-showcase" target="_blank" rel="noopener noreferrer">公开项目介绍 ↗</a><a href="https://github.com/oniszczukthommy-wq/Osmanthus" target="_blank" rel="noopener noreferrer">源码与运行说明 ↗</a></div>
- <details class="project-details"><summary>展开案例 · 流程与产品取舍</summary><h4>为谁解决什么问题</h4><p>懂一些音乐、希望借助 AI 完成作曲与编配的创作者，也面向普通创作爱好者。</p><h4>核心流程与能力</h4><ul><li>确认歌词后再生成，对比两版候选，由用户试听选择。</li><li>对话与手动操作编辑同一份分轨工程，支持撤销、重做与 WAV / MP3 导出。</li><li>准备演唱谱并人工复核；MV 画布组织分镜、素材、字幕与视频导出。</li></ul><h4>产品取舍</h4><p>把创作分成可确认、可试听、可修改的步骤。歌词和歌曲选择由人决定，避免把一次模型生成直接当成最终作品。</p><h4>如何体验</h4><p>公开介绍与源码可查看。完整体验依赖本机工具、模型与自行配置的 API；也可以联系我了解原型体验。</p><p class="project-limit"><strong>当前边界：</strong>自动谱面仍需复核，分轨可能串音。完整 MV 稳定性、Windows 实机及部分模型依赖仍需验收。</p></details></div></article><article class="project-card" id="project-blue" data-category="workspace" style="--accent:#356bb3;--tint:#eaf2fd">
- <div class="project-cover"><div class="cover-top"><span>PROJECT 02 / WORKSPACE</span><span class="cover-icon" aria-hidden="true">⌘</span></div><div class="project-flow">产品研究 → 需求访谈 → 确认 PRD → 任务看板</div></div>
- <div class="project-body"><h3>Blue</h3><p class="project-subtitle">产品经理工作台</p><p class="project-desc">把产品资料、对话、需求文档和开发任务放进一条工作流。围绕个人产品工作，减少信息散落，让每次修改和决策都有据可查。</p><div class="project-tags"><span>产品工作流</span><span>文档版本</span><span>Python / React</span></div><p class="project-state">研究、文档与任务流程已实现；自动开发与部署待接入。</p><div class="project-actions"><a href="https://github.com/oniszczukthommy-wq/blue-pm-workbench-showcase" target="_blank" rel="noopener noreferrer">公开项目介绍 ↗</a></div>
- <details class="project-details"><summary>展开案例 · 流程与产品取舍</summary><h4>为谁解决什么问题</h4><p>需要独立推进研究、需求与文档工作的产品经理和个人产品开发者。</p><h4>核心流程与能力</h4><ul><li>多路联网产品拆解、需求访谈与资料整理。</li><li>PRD 与技术方案的导入、编辑、版本管理和全文搜索。</li><li>AI 修改展示差异，确认后保存新版本；支持任务管理与回收站恢复。</li></ul><h4>产品取舍</h4><p>把 AI 建议与正式文档之间的确认步骤做成产品机制，保留版本和关联产物，便于追溯和恢复。</p><h4>如何体验</h4><p>公开展示仓库提供流程和能力介绍；完整源码与个人业务数据保持私有。体验可通过邮箱联系。</p><p class="project-limit"><strong>当前边界：</strong>复用 DeepSeek Harness 与 Agent Blueprint，方法与部分交互参考 Simin Lab。任务标记完成不代表代码已经执行。</p></details></div></article><article class="project-card" id="project-detective" data-category="creative" style="--accent:#7061a3;--tint:#f1edfa">
- <div class="project-cover"><div class="cover-top"><span>PROJECT 03 / CREATIVE</span><span class="cover-icon" aria-hidden="true">⌕</span></div><div class="project-flow">进入现场 → 询问 NPC → 搜集物证 → 提交结案</div></div>
- <div class="project-body"><h3>夜班档案</h3><p class="project-subtitle">狐狸警官 · AI 探案游戏</p><p class="project-desc">第三人称浏览器探案原型。玩家在场景中搜证、询问各自掌握部分事实的 NPC，再交叉核对线索，形成自己的案件判断。</p><div class="project-tags"><span>互动叙事</span><span>Three.js</span><span>DeepSeek</span></div><p class="project-state">本机功能原型；支持本地演练案件。</p><div class="project-actions"><a href="https://github.com/oniszczukthommy-wq/night-shift-ai-detective-showcase" target="_blank" rel="noopener noreferrer">公开项目介绍 ↗</a></div>
- <details class="project-details"><summary>展开案例 · 流程与产品取舍</summary><h4>为谁解决什么问题</h4><p>喜欢推理、角色对话和互动叙事的玩家。</p><h4>核心流程与能力</h4><ul><li>三种场景和三档难度，分别配置 3 / 4 / 6 位 NPC。</li><li>AI 生成案件后执行结构校验，约束角色与证据关系。</li><li>NPC 仅持有部分事实，物证和结案判定构成完整玩法循环。</li></ul><h4>产品取舍</h4><p>让 NPC 的知识保持局部，玩家需要比较不同口供与物证。案件生成增加结构约束，减少线索关系自相矛盾。</p><h4>如何体验</h4><p>公开仓库展示原创玩法与产品流程，完整开发仓库保持私有。没有模型配置时可使用本地演练案件。</p><p class="project-limit"><strong>当前边界：</strong>实际美术与游戏体验以当前原型为准；真实 AI 案件和不同设备的浏览器体验仍需持续验证。</p></details></div></article><article class="project-card" id="project-shot" data-category="creative" style="--accent:#287b70;--tint:#e9f5f1">
- <div class="project-cover"><div class="cover-top"><span>PROJECT 04 / CREATIVE</span><span class="cover-icon" aria-hidden="true">▤</span></div><div class="project-flow">提出问题 → 检索证据 → 核对来源 → 收藏 / 导出</div></div>
- <div class="project-body"><h3>Shot Agent</h3><p class="project-subtitle">影视镜头检索与问片助理</p><p class="project-desc">用一句话寻找电影、画面或台词，回答附带可以核对的来源。内置两部 CC BY 3.0 开源电影的 244 个镜头，支持筛选、切片和参考板。</p><div class="project-tags"><span>证据检索</span><span>244 个镜头</span><span>Python / FastAPI</span></div><p class="project-state">公开源码与在线演示；线上不含影片本体。</p><div class="project-actions"><a href="https://github.com/oniszczukthommy-wq/film-shot-agent" target="_blank" rel="noopener noreferrer">源码与说明 ↗</a><a href="https://film-shot-agent.onrender.com/" target="_blank" rel="noopener noreferrer">在线演示 ↗</a></div>
- <details class="project-details"><summary>展开案例 · 流程与产品取舍</summary><h4>为谁解决什么问题</h4><p>需要寻找影视参考、回忆台词出处，或整理镜头与片单的用户。</p><h4>核心流程与能力</h4><ul><li>问片通过搜索、字幕和影片信息工具形成带出处的候选。</li><li>镜头库按画面属性筛选，台词与时间轴对齐，支持 MP4 / GIF 切片。</li><li>参考板导出与浏览器本地片单；片单可用 JSON 备份。</li></ul><h4>产品取舍</h4><p>引用 URL 只使用工具实际返回的来源，评分和观看渠道另做核对。将本地规则检索与模型编排问片分开，保证边界清晰。</p><h4>如何体验</h4><p>可查看公开源码及部署说明，或打开在线演示。免费演示实例可能需要唤醒；播放和切片需本地准备授权影片。</p><p class="project-limit"><strong>当前边界：</strong>模糊画面描述仅提供候选，截图找片尚未实现。片单按浏览器保存，不跨设备自动同步。</p></details></div></article><article class="project-card" id="project-vision" data-category="workspace" style="--accent:#39768e;--tint:#eaf4f8">
- <div class="project-cover"><div class="cover-top"><span>PROJECT 05 / WORKSPACE</span><span class="cover-icon" aria-hidden="true">▧</span></div><div class="project-flow">上传素材 → 任务队列 → 画布组织 → 批量导出</div></div>
- <div class="project-body"><h3>端侧 AI Studio</h3><p class="project-subtitle">视觉创作工作台</p><p class="project-desc">面向视觉创作的本机工作台原型。让图像、视频与导出任务进入同一套队列，在画布中整理结果，并按平台规格批量导出。</p><div class="project-tags"><span>任务调度</span><span>图层画布</span><span>FastAPI</span></div><p class="project-state">流程骨架已打通；当前生成使用 Mock 占位后端。</p><div class="project-actions"><a href="https://github.com/oniszczukthommy-wq/edge-ai-vision-studio-showcase" target="_blank" rel="noopener noreferrer">公开项目介绍 ↗</a></div>
- <details class="project-details"><summary>展开案例 · 流程与产品取舍</summary><h4>为谁解决什么问题</h4><p>需要管理多份视觉素材、生成任务与不同尺寸导出的内容创作者。</p><h4>核心流程与能力</h4><ul><li>项目、素材、图层、风格模板和导出规格管理。</li><li>图像、视频、导出三条任务泳道，支持优先级、暂停、取消和重跑。</li><li>任务持久化、崩溃恢复、生成产物回滚及审计记录。</li></ul><h4>产品取舍</h4><p>先验证任务生命周期、恢复与画布衔接，让失败和中断有明确处理路径，再接入真实生成模型。</p><h4>如何体验</h4><p>公开仓库提供产品介绍，完整源码与个人素材保持私有。可联系我了解流程演示。</p><p class="project-limit"><strong>当前边界：</strong>当前图像与视频输出是 Mock 占位内容，不能作为真实模型效果展示；预留的模型适配接口尚未完成集成验收。</p></details></div></article><article class="project-card" id="project-guitar" data-category="creative" style="--accent:#a35e58;--tint:#faf0ed">
- <div class="project-cover"><div class="cover-top"><span>PROJECT 06 / CREATIVE</span><span class="cover-icon" aria-hidden="true">♬</span></div><div class="project-flow">选择和弦 → 扫弦演奏 → 看谱练习 → 混音录制</div></div>
- <div class="project-body"><h3>弦间</h3><p class="project-subtitle">虚拟吉他弹唱工具</p><p class="project-desc">把虚拟琴弦、和弦切换、弹唱谱和录音放进浏览器。可以用键盘、触屏或摄像头手势演奏，也可以把歌声和吉他混音保存。</p><div class="project-tags"><span>Web Audio</span><span>Tone.js</span><span>MediaPipe</span></div><p class="project-state">浏览器功能原型；手势与音频体验需设备实测。</p><div class="project-actions"><a href="https://github.com/oniszczukthommy-wq/guitar-workbench-showcase" target="_blank" rel="noopener noreferrer">公开项目介绍 ↗</a></div>
- <details class="project-details"><summary>展开案例 · 流程与产品取舍</summary><h4>为谁解决什么问题</h4><p>希望在浏览器中练习和弦、弹唱，或尝试不同输入方式的音乐爱好者。</p><h4>核心流程与能力</h4><ul><li>键盘切换和弦与扫弦，鼠标 / 触屏逐弦演奏。</li><li>摄像头识别手势，选择和弦并触发扫弦。</li><li>ChordPro / JSON 导入、编辑、移调、全屏看谱与混音录制。</li></ul><h4>产品取舍</h4><p>将演奏、读谱和录音组合在一个练习流程中。摄像头画面在浏览器内处理，麦克风与摄像头按需开启。</p><h4>如何体验</h4><p>公开仓库展示产品体验和实现边界，完整源码保持私有。原型体验可邮件联系。</p><p class="project-limit"><strong>当前边界：</strong>手机摄像头需要可信 HTTPS；自动和弦与时间轴仍需人工核对，实际手势稳定性取决于设备和环境。</p></details></div></article></div>
-<aside class="extra-project"><div><span class="kicker">ALSO BUILT</span><h3>Astronavi · 天文通落地页</h3><p>一次前端视觉叙事练习：视差星空、交互太阳系、程序化月相与滚动动效。</p></div><a class="text-action" href="https://github.com/oniszczukthommy-wq/astronavi-landing" target="_blank" rel="noopener noreferrer">项目仓库 ↗</a></aside>
-</section>
-<section class="workspace-view" id="practice" aria-labelledby="practice-title"><header class="section-heading"><span class="kicker">HOW I BUILD</span><h2 id="practice-title">把产品判断，落到具体设计里。</h2><p>从音乐与教学积累的体验视角出发，用小而完整的原型验证问题。下面这些取舍已经体现在项目流程中。</p></header>
-<div class="practice-grid">
-<article class="practice-card"><span class="practice-number">01 / EVIDENCE</span><h3>让答案可以核对</h3><p>问片时，找到一个像真的答案还不够。Shot Agent 把工具返回的链接纳入引用白名单，再核对评分来源；未找到的线索保留不确定性。</p><a href="#project-shot">查看 Shot Agent 案例 →</a></article>
-<article class="practice-card"><span class="practice-number">02 / HUMAN DECISION</span><h3>把选择权留给使用者</h3><p>Blue 在 AI 修改文档后先展示差异，由人确认再保存；Osmanthus 先确认歌词，再对比歌曲候选。关键决定成为流程中的明确步骤。</p><a href="#project-blue">查看 Blue 工作台案例 →</a></article>
-<article class="practice-card"><span class="practice-number">03 / CREATIVE FLOW</span><h3>围绕创作过程组织能力</h3><p>从写词、试听到分轨修改，或者从和弦切换到弹唱录音，让相邻步骤共享同一份创作上下文，减少在工具之间来回切换。</p><a href="#project-music">查看 Osmanthus 案例 →</a></article>
-<article class="practice-card"><span class="practice-number">04 / RECOVERY</span><h3>考虑中断之后怎么办</h3><p>视觉工作台把任务暂停、重跑、崩溃恢复和结果回滚放进基础流程。先验证队列与画布能稳定衔接，再接入真实生成模型。</p><a href="#project-vision">查看视觉工作台案例 →</a></article>
-</div><div class="toolbox"><div><span class="kicker">PRODUCT</span><p>需求访谈 · PRD · 用户流程 · 竞品拆解 · 验收标准</p></div><div><span class="kicker">BUILD</span><p>Python · FastAPI · React · JavaScript · SQLite · Three.js · FFmpeg</p></div></div></section>
-<section class="workspace-view" id="notes" aria-labelledby="notes-title"><header class="section-heading"><span class="kicker">WRITING / PUBLIC NOTES</span><h2 id="notes-title">从产品视角，理解 AI 的变化。</h2><p>记录模型能力、Agent 工作流、成本与产品体验的观察。以下 10 篇文章与 GitHub 个人主页同步，点击前往微信原文。</p></header><div class="notes-grid" id="notesGrid"><a class="note-card" href="https://mp.weixin.qq.com/s/QUxastjphzBssuFruJr6sg" target="_blank" rel="noopener noreferrer"><span class="note-meta"><span>WECHAT / AI PRODUCT</span><span>01</span></span><h3>Jev 爆火背后：AI 模型正在从“什么都能聊”走向“只做一件事”</h3><span class="note-link">阅读原文 ↗</span></a><a class="note-card" href="https://mp.weixin.qq.com/s/ZgMWDtMdYGFYiIBSBTWsIw" target="_blank" rel="noopener noreferrer"><span class="note-meta"><span>WECHAT / AI PRODUCT</span><span>02</span></span><h3>降本不是口号：Haiku 5.5 让「子 Agent 批量跑」第一次算得过来</h3><span class="note-link">阅读原文 ↗</span></a><a class="note-card" href="https://mp.weixin.qq.com/s/Sh5ovTCxbSKS5OEx1J-vDw" target="_blank" rel="noopener noreferrer"><span class="note-meta"><span>WECHAT / AI PRODUCT</span><span>03</span></span><h3>我试了一圈 Personal Agent，发现离“私人助手”还很远</h3><span class="note-link">阅读原文 ↗</span></a><a class="note-card" href="https://mp.weixin.qq.com/s/DuEMzBfzs7_CtYghjG_kMA" target="_blank" rel="noopener noreferrer"><span class="note-meta"><span>WECHAT / AI PRODUCT</span><span>04</span></span><h3>GPT-6.1 Sol Ultrafast：OpenAI 第一次为“等待”明码标价</h3><span class="note-link">阅读原文 ↗</span></a><a class="note-card" href="https://mp.weixin.qq.com/s/fDG-FzectUcqSNrbTZhkSA" target="_blank" rel="noopener noreferrer"><span class="note-meta"><span>WECHAT / AI PRODUCT</span><span>05</span></span><h3>以后用 AI 会越来越便宜？把这半个月串起来看</h3><span class="note-link">阅读原文 ↗</span></a><a class="note-card" href="https://mp.weixin.qq.com/s/4PUOSkDSiCv7efrppSAfdQ" target="_blank" rel="noopener noreferrer"><span class="note-meta"><span>WECHAT / AI PRODUCT</span><span>06</span></span><h3>上下文窗口都 100 万了，为什么还要“管”它？</h3><span class="note-link">阅读原文 ↗</span></a><a class="note-card" href="https://mp.weixin.qq.com/s/HRU1zZ16ghBhEl00FeZS_Q" target="_blank" rel="noopener noreferrer"><span class="note-meta"><span>WECHAT / AI PRODUCT</span><span>07</span></span><h3>Meta 发新模型：不比聪明了，开始比“记得住你”</h3><span class="note-link">阅读原文 ↗</span></a><a class="note-card" href="https://mp.weixin.qq.com/s/HqG0J7VP1I0YfnmvGIMklw" target="_blank" rel="noopener noreferrer"><span class="note-meta"><span>WECHAT / AI PRODUCT</span><span>08</span></span><h3>美团把 Agent 评测讲透了：你缺的不是更强的模型</h3><span class="note-link">阅读原文 ↗</span></a><a class="note-card" href="https://mp.weixin.qq.com/s/rZJbuQYhuMimzu5kRQGdTQ" target="_blank" rel="noopener noreferrer"><span class="note-meta"><span>WECHAT / AI PRODUCT</span><span>09</span></span><h3>DeepSeek 又掀桌：不涨价、开源、还白送搜索 API</h3><span class="note-link">阅读原文 ↗</span></a><a class="note-card" href="https://mp.weixin.qq.com/s/VuIUx3TnMq3rTwCHrp10Yg" target="_blank" rel="noopener noreferrer"><span class="note-meta"><span>WECHAT / AI PRODUCT</span><span>10</span></span><h3>48 小时内，DeepSeek 和 MiniMax 把“平替”两个字撕碎了</h3><span class="note-link">阅读原文 ↗</span></a></div><p class="section-footnote">微信文章可能需要在微信内打开，或完成平台验证。</p></section>
-<section class="workspace-view" id="contact" aria-labelledby="contact-title"><div class="contact-grid"><div><span class="kicker">LET'S TALK</span><h2 id="contact-title">一起聊聊，<br>值得做的产品。</h2><p class="intro">欢迎交流 AI 产品、音乐与内容创作工具、Agent 工作流，也欢迎对这些原型提出具体反馈。</p><a class="primary-action" href="mailto:oniszczukthommy@gmail.com">发邮件给我 ↗</a><p class="contact-hint">想体验本机原型，可以在邮件中说明项目名称和使用设备。</p></div><div class="contact-channels"><a href="mailto:oniszczukthommy@gmail.com"><small>EMAIL</small><strong>oniszczukthommy@gmail.com</strong><span>正式沟通与项目交流 ↗</span></a><button id="copyEmail" hidden>复制邮箱地址</button><span id="copyStatus" role="status" aria-live="polite"></span><a href="https://github.com/oniszczukthommy-wq" target="_blank" rel="noopener noreferrer"><small>GITHUB</small><strong>@oniszczukthommy-wq</strong><span>公开项目、源码与迭代记录 ↗</span></a><a href="https://www.xiaohongshu.com/user/profile/5cd98bab0000000010005b08" target="_blank" rel="noopener noreferrer"><small>XIAOHONGSHU</small><strong>小红书 · 产品实践笔记</strong><span>更多日常观察与分享 ↗</span></a></div></div></section>
-</div></main></div>
-<footer class="terminal-strip"><span><b>$</b> open yuanhang.os <span class="footer-detail">— ideas into working products</span></span><span>内容更新 <time datetime="2026-10-31">2026.10.31</time></span></footer>
-</div>
-<dialog id="bootTerminal" aria-labelledby="terminalTitle"><div class="terminal-titlebar"><span class="traffic-lights" aria-hidden="true"><i></i><i></i><i></i></span><span id="terminalTitle">yuanhang-os · login shell</span><button id="closeTerminal" aria-label="关闭终端">×</button></div><div class="terminal-body"><p class="prompt">$ whoami</p><p>yuanhang · AI product builder</p><p class="prompt">$ cat about.md</p><p>music education → teaching → AI products &amp; creative tools</p><p class="prompt">$ ls projects</p><p>osmanthus / blue / detective / shot-agent / vision / guitar</p><p class="prompt">$ open yuanhang.os<span class="blink">▌</span></p><button class="primary-action" id="launchButton">进入作品集 →</button></div></dialog>
-<noscript><div class="noscript-note">你正在浏览完整静态版本，项目与文章链接仍可使用。</div></noscript>
-<script src="./assets/app.js"></script>
-</body></html>
+
+  <!-- boot terminal overlay -->
+  <section class="terminal" id="bootTerminal" aria-label="Boot terminal">
+    <div class="terminal-titlebar">
+      <span class="t-dot red"></span><span class="t-dot yellow"></span><span class="t-dot green"></span>
+      <span class="t-title">yuanhang-os · login shell</span>
+    </div>
+    <div class="terminal-body" id="bootBody"></div>
+    <div class="boot-cta" id="bootCta">
+      <button class="cta-text" id="ctaText">Press Enter to Launch</button>
+      <div class="cta-arrow">↓</div>
+    </div>
+  </section>
+
+  <div class="wallpaper"></div>
+
+  <div class="site-shell" id="siteShell">
+    <header class="os-header">
+      <button class="os-mark" data-nav="about">
+        <span class="os-cursor"></span>
+        <span>YZH OS</span>
+      </button>
+      <span class="os-context" id="osContext">PRODUCT DECISION SYSTEM</span>
+    </header>
+
+    <div class="os-layout">
+      <nav class="os-sidebar" aria-label="网站主导航" id="navBar">
+        <button data-nav="about" class="is-active">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-3.3 3.6-5 8-5s8 1.7 8 5"/></svg></span>
+          <span>ABOUT<small style="display:block;color:var(--faint);font-size:9px">关于</small></span>
+        </button>
+        <button data-nav="product">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
+          <span>PRODUCT<small style="display:block;color:var(--faint);font-size:9px">产品 Demo</small></span>
+        </button>
+        <button data-nav="tool">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L4 17l3 3 4.7-4.7a4.5 4.5 0 0 0 6-6l-2.5 2.5-2.5-2.5z"/></svg></span>
+          <span>TOOL<small style="display:block;color:var(--faint);font-size:9px">工作台</small></span>
+        </button>
+        <button data-nav="notes">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg></span>
+          <span>NOTES<small style="display:block;color:var(--faint);font-size:9px">公开文章</small></span>
+        </button>
+        <button data-nav="contact">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <span>CONTACT<small style="display:block;color:var(--faint);font-size:9px">联系我</small></span>
+        </button>
+      </nav>
+
+      <div class="main-window">
+        <div class="window-titlebar">
+          <div class="traffic-lights">
+            <span class="traffic-light red"></span><span class="traffic-light yellow"></span><span class="traffic-light green"></span>
+          </div>
+          <span class="window-path" id="windowPath">~/yuanhang-os/about</span>
+          <span class="window-minimize"></span>
+        </div>
+
+        <div class="workspace-stage">
+
+          <!-- ABOUT -->
+          <section class="workspace-view about-view is-active" id="view-about">
+            <div class="identity-panel">
+              <span class="section-kicker">HELLO, I'M</span>
+              <h1>Yuanhang Zhou</h1>
+              <div class="role-title">AI Product Manager · Local-first Agents</div>
+              <div class="identity-rule"></div>
+              <p class="hero-statement">
+                I build local-first AI tools and agents:<br/>
+                from PRD and user research all the way to a demo you can actually run.
+              </p>
+              <div class="proof-line">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>
+                <span>Music education background · teaching practice · self-driven AI product build</span>
+              </div>
+              <div class="handwritten-formula">
+                <span>User Insight</span> <b>×</b> <span>Product Definition</span> <b>×</b> <span>Shippable Demo</span>
+              </div>
+              <div class="hero-actions">
+                <button class="primary-action" data-nav="product">查看产品案例</button>
+                <a class="text-action" href="https://github.com/oniszczukthommy-wq" target="_blank" rel="noreferrer">打开 GitHub →</a>
+              </div>
+              <div class="portrait-rig">
+                <div class="portrait-card">
+                  <img src="./assets/portrait.svg" alt="Portrait of Yuanhang Zhou" />
+                  <figcaption>YUANHANG · PM</figcaption>
+                </div>
+                <span class="portrait-clip">⚋</span>
+              </div>
+            </div>
+
+            <div class="decision-system">
+              <div class="system-heading">
+                <span></span><h2>PRODUCT DECISION SYSTEM</h2><span></span>
+              </div>
+              <div class="decision-network">
+                <div class="decision-core">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><circle cx="12" cy="12" r="6"/></svg>
+                  <strong>AI Products<br/>&amp; Tools</strong>
+                  <small>LOCAL-FIRST · HUMAN GATED</small>
+                </div>
+                <button class="decision-lane lane-blue" data-nav="product">
+                  <div class="map-node">
+                    <span class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
+                    <span><small>01 · TECH UNDERSTANDING</small><strong>问题定义</strong><p>读懂模型能力与边界，把复杂约束翻译成清晰问题。</p></span>
+                  </div>
+                  <span class="signal-path"></span>
+                  <span></span>
+                  <span class="signal-path"></span>
+                  <div class="map-node">
+                    <span class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+                    <span><small>02 · EVIDENCE GATE</small><strong>证据闸门</strong><p>引用白名单、评分反查，不让模型编造链接与分数。</p></span>
+                  </div>
+                </button>
+                <button class="decision-lane lane-green" data-nav="product">
+                  <div class="map-node">
+                    <span class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-3.3 3.6-5 8-5s8 1.7 8 5"/></svg></span>
+                    <span><small>03 · USER INSIGHT</small><strong>方案取舍</strong><p>从场景与行为出发，判断什么值得做、先做什么。</p></span>
+                  </div>
+                  <span class="signal-path"></span>
+                  <span></span>
+                  <span class="signal-path"></span>
+                  <div class="map-node">
+                    <span class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></span>
+                    <span><small>04 · PRD LEDGER</small><strong>需求账本</strong><p>PRD 版本化留存，每个 AI 修改先出 diff 再由本人确认。</p></span>
+                  </div>
+                </button>
+                <button class="decision-lane lane-amber" data-nav="tool">
+                  <div class="map-node">
+                    <span class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h18M12 3v18"/><circle cx="12" cy="12" r="9"/></svg></span>
+                    <span><small>05 · COST &amp; RISK</small><strong>成本护栏</strong><p>付费任务设预算上限与去重，结果不确定时不盲目重试。</p></span>
+                  </div>
+                  <span class="signal-path"></span>
+                  <span></span>
+                  <span class="signal-path"></span>
+                  <div class="map-node">
+                    <span class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.1V12a10 10 0 1 1-5.9-9.1"/><path d="M22 4 12 14l-3-3"/></svg></span>
+                    <span><small>06 · CLOSED LOOP</small><strong>落地闭环</strong><p>本地优先、密钥不入库、产物可校验，用可验证结果迭代。</p></span>
+                  </div>
+                </button>
+              </div>
+              <div class="decision-explainer">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                <span>同步能力：问题定义 → 方案取舍 → 落地闭环；模型给候选，代码守边界，人做最终决策。</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- PRODUCT -->
+          <section class="workspace-view" id="view-product">
+            <div class="work-showcase">
+              <div class="work-stage" id="productStage"></div>
+              <button class="work-carousel-nav work-carousel-prev" data-dir="-1" data-set="product" aria-label="上一张">‹</button>
+              <button class="work-carousel-nav work-carousel-next" data-dir="1" data-set="product" aria-label="下一张">›</button>
+              <div class="work-carousel-hint">‹ 点击切换 · <span id="productCount"></span> 个产品 Demo ›</div>
+            </div>
+          </section>
+
+          <!-- TOOL -->
+          <section class="workspace-view" id="view-tool">
+            <div class="work-showcase">
+              <div class="work-stage" id="toolStage"></div>
+              <button class="work-carousel-nav work-carousel-prev" data-dir="-1" data-set="tool" aria-label="上一张">‹</button>
+              <button class="work-carousel-nav work-carousel-next" data-dir="1" data-set="tool" aria-label="下一张">›</button>
+              <div class="work-carousel-hint">‹ 点击切换 · <span id="toolCount"></span> 个工作台 ›</div>
+            </div>
+          </section>
+
+          <!-- NOTES -->
+          <section class="workspace-view notes-view" id="view-notes">
+            <div class="notes-side">
+              <span class="section-kicker">WRITING · PUBLIC</span>
+              <h2 class="notes-title">公开文章</h2>
+              <p>从产品视角记录 AI 模型能力、Agent 评测与个人产品实践；每一篇都对应一个亲手验证过的问题。</p>
+            </div>
+            <div class="notes-grid" id="notesGrid"></div>
+          </section>
+
+          <!-- CONTACT -->
+          <section class="workspace-view contact-view" id="view-contact">
+            <div class="contact-copy">
+              <span class="section-kicker">GET IN TOUCH</span>
+              <h1>联系我，<br/>或继续查看公开作品。</h1>
+              <p>邮箱用于正式沟通；GitHub 与小红书用于查看公开内容与迭代记录。</p>
+              <a class="primary-action" href="mailto:oniszczukthommy@gmail.com">发邮件给我</a>
+            </div>
+            <aside class="contact-status">
+              <div class="contact-channels">
+                <a href="mailto:oniszczukthommy@gmail.com">
+                  <span class="channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+                  <span><small>EMAIL</small><strong>oniszczukthommy@gmail.com</strong></span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+                <a href="https://github.com/oniszczukthommy-wq" target="_blank" rel="noreferrer">
+                  <span class="channel-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 8.84 21.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></span>
+                  <span><small>GITHUB</small><strong>@oniszczukthommy-wq</strong></span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+                <a href="https://www.xiaohongshu.com/user/profile/5cd98bab0000000010005b08" target="_blank" rel="noreferrer">
+                  <span class="channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg></span>
+                  <span><small>XIAOHONGSHU</small><strong>小红书 · 产品实践笔记</strong></span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+              </div>
+            </aside>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="terminal-strip">
+      <span><b>$</b> open yuanhang.os — local-first product workspace</span>
+      <span class="system-status"><i></i>SYSTEM READY</span>
+    </footer>
+  </div>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>

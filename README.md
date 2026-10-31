@@ -2,7 +2,7 @@
 
 Static GitHub Pages website at https://oniszczukthommy-wq.github.io/.
 
-A terminal launch screen opens a desktop-style portfolio with About, Product, Tool, Notes, and Contact views. Includes four product cases, two workbench prototypes, ten article links, and personal contact channels. The layout and interaction are inspired by HiWhaleW’s portfolio; all copy, project illustrations, article artwork, portrait, and links are specific to Yuanhang Zhou.
+A terminal launch screen opens a desktop-style portfolio with About, Product, Tool, Notes, and Contact views. Includes four product cases, two workbench prototypes, seventeen article links, and personal contact channels. The layout and interaction are inspired by HiWhaleW’s portfolio; all copy, project illustrations, article artwork, portrait, and links are specific to Yuanhang Zhou.
 
 ## Preview
 

@@ -11,16 +11,115 @@ const toolProjects = [
   { tag: "VISUAL · AI WORKFLOW PROTOTYPE", title: "Edge AI Vision Studio", icon: "film", desc: "用画布整理视觉创作中的想法与任务。\n从素材组织、生成队列到结果导出，\n探索一个可恢复、可追踪的视觉工作台。", note: "Mock 原型 · 尚未接入真实生成模型", repo: "edge-ai-vision-studio-showcase" },
 ];
 const notes = [
-  { title: "Jev 爆火背后：AI 模型正在从“什么都能聊”走向“只做一件事”", url: "https://mp.weixin.qq.com/s/QUxastjphzBssuFruJr6sg" },
-  { title: "降本不是口号：Haiku 5.5 让「子 Agent 批量跑」第一次算得过来", url: "https://mp.weixin.qq.com/s/ZgMWDtMdYGFYiIBSBTWsIw" },
-  { title: "我试了一圈 Personal Agent，发现离“私人助手”还很远", url: "https://mp.weixin.qq.com/s/Sh5ovTCxbSKS5OEx1J-vDw" },
-  { title: "GPT-6.1 Sol Ultrafast：OpenAI 第一次为“等待”明码标价", url: "https://mp.weixin.qq.com/s/DuEMzBfzs7_CtYghjG_kMA" },
-  { title: "以后用 AI 会越来越便宜？把这半个月串起来看", url: "https://mp.weixin.qq.com/s/fDG-FzectUcqSNrbTZhkSA" },
-  { title: "上下文窗口都 100 万了，为什么还要“管”它？", url: "https://mp.weixin.qq.com/s/4PUOSkDSiCv7efrppSAfdQ" },
-  { title: "Meta 发新模型：不比聪明了，开始比“记得住你”", url: "https://mp.weixin.qq.com/s/HRU1zZ16ghBhEl00FeZS_Q" },
-  { title: "美团把 Agent 评测讲透了：你缺的不是更强的模型", url: "https://mp.weixin.qq.com/s/HqG0J7VP1I0YfnmvGIMklw" },
-  { title: "DeepSeek 又掀桌：不涨价、开源、还白送搜索 API", url: "https://mp.weixin.qq.com/s/rZJbuQYhuMimzu5kRQGdTQ" },
-  { title: "48 小时内，DeepSeek 和 MiniMax 把“平替”两个字撕碎了", url: "https://mp.weixin.qq.com/s/VuIUx3TnMq3rTwCHrp10Yg" },
+  {
+    "title": "推门出去 30 秒再回来，那扇门还开着：Genie 4 把\"视频\"变成了\"世界\"",
+    "url": "https://mp.weixin.qq.com/s/ZZLfkkLJsequ9kDZ4-lT8A",
+    "topic": "世界模型",
+    "cover": "note-12",
+    "date": "2026-10-28"
+  },
+  {
+    "title": "审稿几个月，以后可能几天：AI 把学术出版的第一道闸门抢了",
+    "url": "https://mp.weixin.qq.com/s/7RokY8dSJPUiGXa2fYxOqA",
+    "topic": "学术出版",
+    "cover": "note-11",
+    "date": "2026-10-26"
+  },
+  {
+    "title": "3 万亿参数开源模型逼近 Opus 5.5，但大家先吵起了额度",
+    "url": "https://mp.weixin.qq.com/s/4X638XgUbo4LP0YKeF7s-Q",
+    "topic": "开源模型",
+    "cover": "note-13",
+    "date": "2026-10-24"
+  },
+  {
+    "title": "可灵 4.0 API 首发：你当导演钉分镜，AI 只管演中间那段",
+    "url": "https://mp.weixin.qq.com/s/YOuTH7OfQ-z0FBQgSRUqBQ",
+    "topic": "AI 视频",
+    "cover": "note-14",
+    "date": "2026-10-22"
+  },
+  {
+    "title": "一个半月，Meta、OpenAI、Anthropic 把个人 Agent 的牌桌坐满了",
+    "url": "https://mp.weixin.qq.com/s/YP_p5Yw85fQfBmdmOxWVoQ",
+    "topic": "个人 Agent",
+    "cover": "note-15",
+    "date": "2026-10-22"
+  },
+  {
+    "title": "12 万星的 REA 吹得很神，但先看清它能拆什么、拆不动什么",
+    "url": "https://mp.weixin.qq.com/s/3rvyQsUdbAgbf31ZSOUa0A",
+    "topic": "工具观察",
+    "cover": "note-16",
+    "date": "2026-10-21"
+  },
+  {
+    "title": "别人渲染一部短片的时间，它已经让你试了二十条",
+    "url": "https://mp.weixin.qq.com/s/GVgGslNUo2JcgjA5Ocz8zw",
+    "topic": "生成体验",
+    "cover": "note-17",
+    "date": "2026-10-20"
+  },
+  {
+    "title": "Jev 爆火背后：AI 模型正在从“什么都能聊”走向“只做一件事”",
+    "url": "https://mp.weixin.qq.com/s/QUxastjphzBssuFruJr6sg",
+    "topic": "产品观察",
+    "cover": "note-1"
+  },
+  {
+    "title": "降本不是口号：Haiku 5.5 让「子 Agent 批量跑」第一次算得过来",
+    "url": "https://mp.weixin.qq.com/s/ZgMWDtMdYGFYiIBSBTWsIw",
+    "topic": "Agent 成本",
+    "cover": "note-2"
+  },
+  {
+    "title": "我试了一圈 Personal Agent，发现离“私人助手”还很远",
+    "url": "https://mp.weixin.qq.com/s/Sh5ovTCxbSKS5OEx1J-vDw",
+    "topic": "个人助手",
+    "cover": "note-3"
+  },
+  {
+    "title": "GPT-6.1 Sol Ultrafast：OpenAI 第一次为“等待”明码标价",
+    "url": "https://mp.weixin.qq.com/s/DuEMzBfzs7_CtYghjG_kMA",
+    "topic": "模型体验",
+    "cover": "note-4"
+  },
+  {
+    "title": "以后用 AI 会越来越便宜？把这半个月串起来看",
+    "url": "https://mp.weixin.qq.com/s/fDG-FzectUcqSNrbTZhkSA",
+    "topic": "AI 定价",
+    "cover": "note-5"
+  },
+  {
+    "title": "上下文窗口都 100 万了，为什么还要“管”它？",
+    "url": "https://mp.weixin.qq.com/s/4PUOSkDSiCv7efrppSAfdQ",
+    "topic": "上下文工程",
+    "cover": "note-6"
+  },
+  {
+    "title": "Meta 发新模型：不比聪明了，开始比“记得住你”",
+    "url": "https://mp.weixin.qq.com/s/HRU1zZ16ghBhEl00FeZS_Q",
+    "topic": "长期记忆",
+    "cover": "note-7"
+  },
+  {
+    "title": "美团把 Agent 评测讲透了：你缺的不是更强的模型",
+    "url": "https://mp.weixin.qq.com/s/HqG0J7VP1I0YfnmvGIMklw",
+    "topic": "Agent 评测",
+    "cover": "note-8"
+  },
+  {
+    "title": "DeepSeek 又掀桌：不涨价、开源、还白送搜索 API",
+    "url": "https://mp.weixin.qq.com/s/rZJbuQYhuMimzu5kRQGdTQ",
+    "topic": "开源生态",
+    "cover": "note-9"
+  },
+  {
+    "title": "48 小时内，DeepSeek 和 MiniMax 把“平替”两个字撕碎了",
+    "url": "https://mp.weixin.qq.com/s/VuIUx3TnMq3rTwCHrp10Yg",
+    "topic": "模型观察",
+    "cover": "note-10"
+  }
 ];
 
 const ICONS = {
@@ -33,11 +132,10 @@ const ICONS = {
 };
 
 
-const noteTopics = ["产品观察", "Agent 成本", "个人助手", "模型体验", "AI 定价", "上下文工程", "长期记忆", "Agent 评测", "开源生态", "模型观察"];
 const sets = {
   product: products,
   tool: toolProjects,
-  notes: notes.map((item, index) => ({...item, tag: `WRITING · ${noteTopics[index]}`, cover: `note-${index + 1}`, desc: "关于 AI 产品、模型能力与真实使用体验的观察。", note: "微信公众号 · 公开文章"})),
+  notes: notes.map(item => ({...item, tag: `WRITING · ${item.topic}`, desc: "关于 AI 产品、模型能力与真实使用体验的观察。", note: "微信公众号 · 公开文章"})),
 };
 const cursor = {product: 0, tool: 0, notes: 0};
 const esc = value => String(value).replace(/[&<>"']/g, char => ({"&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"})[char]);
@@ -197,3 +295,4 @@ bootLines.forEach((line, index) => setTimeout(() => {
 }, reducedMotion ? 0 : index * 120));
 showView(location.hash.slice(1), false);
 if (Object.hasOwn(paths, location.hash.slice(1))) launch();
+

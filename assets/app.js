@@ -155,6 +155,7 @@ function renderCards(set) {
       ? externalLink(intro, `<img src="${cover}" alt="${esc(item.title)} · ${set === "notes" ? "文章封面" : "项目概念插画"}" width="600" height="320">`, "card-cover")
       : `<div class="work-card-symbol" aria-hidden="true">${ICONS[item.icon]}</div>`;
     let links = externalLink(intro, `${set === "notes" ? "阅读原文" : "查看项目介绍"} ${ICONS.link}`);
+    if (item.title === "Osmanthus") links = `<button class="case-card-link" data-nav="case">查看面试案例 ↗</button>` + links;
     if (item.demo) links = externalLink(item.demo, `在线体验 ${ICONS.link}`) + links;
     if (item.source) links += externalLink(`${GITHUB}/${item.source}`, `查看源码 ${ICONS.link}`);
     article.innerHTML = `${heading}<div class="work-card-copy"><small>${esc(item.tag)}</small><h2>${esc(item.title)}</h2><p>${esc(item.desc)}</p><span class="work-access-note">${esc(item.note)}</span><div class="work-card-links">${links}</div></div><button class="card-select" aria-label="切换到${esc(item.title)}"></button>`;
@@ -191,7 +192,7 @@ function selectCard(set, index) {
 Object.keys(sets).forEach(renderCards);
 document.querySelectorAll("[data-set][data-dir]").forEach(button => button.addEventListener("click", () => selectCard(button.dataset.set, cursor[button.dataset.set] + Number(button.dataset.dir))));
 
-const paths = {about:"~/portfolio/about", product:"AI 产品", tool:"工具与工作台", notes:"公开文章", contact:"~/portfolio/contact"};
+const paths = {case:"核心案例 / Osmanthus", experience:"个人履历", about:"~/portfolio/about", product:"AI 产品", tool:"工具与工作台", notes:"公开文章", contact:"~/portfolio/contact"};
 let activeView = "about";
 let launched = false;
 const shell = document.getElementById("siteShell");
@@ -295,4 +296,5 @@ bootLines.forEach((line, index) => setTimeout(() => {
 }, reducedMotion ? 0 : index * 120));
 showView(location.hash.slice(1), false);
 if (Object.hasOwn(paths, location.hash.slice(1))) launch();
+
 

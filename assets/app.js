@@ -155,7 +155,7 @@ function renderCards(set) {
       ? externalLink(intro, `<img src="${cover}" alt="${esc(item.title)} · ${set === "notes" ? "文章封面" : "项目概念插画"}" width="600" height="320">`, "card-cover")
       : `<div class="work-card-symbol" aria-hidden="true">${ICONS[item.icon]}</div>`;
     let links = externalLink(intro, `${set === "notes" ? "阅读原文" : "查看项目介绍"} ${ICONS.link}`);
-    if (item.title === "Osmanthus") links = externalLink("http://127.0.0.1:8792/index.html", "打开 MV 平台（本机） ↗") + `<button class="case-card-link" data-nav="case">查看面试案例 ↗</button>` + links;
+    if (item.title === "Osmanthus") links = `<button type="button" class="case-card-link" data-copy-mv>复制 MV 本机地址</button>` + `<button class="case-card-link" data-nav="case">查看面试案例 ↗</button>` + links;
     if (item.demo) links = externalLink(item.demo, `在线体验 ${ICONS.link}`) + links;
     if (item.source) links += externalLink(`${GITHUB}/${item.source}`, `查看源码 ${ICONS.link}`);
     article.innerHTML = `${heading}<div class="work-card-copy"><small>${esc(item.tag)}</small><h2>${esc(item.title)}</h2><p>${esc(item.desc)}</p><span class="work-access-note">${esc(item.note)}</span><div class="work-card-links">${links}</div></div><button class="card-select" aria-label="切换到${esc(item.title)}"></button>`;
@@ -190,6 +190,13 @@ function selectCard(set, index) {
   if (shouldFocus || active?.disabled) document.querySelector(`[data-carousel="${set}"]`).focus({preventScroll:true});
 }
 Object.keys(sets).forEach(renderCards);
+document.addEventListener("click", async event => {
+  const button = event.target.closest("[data-copy-mv]");
+  if (!button) return;
+  const address = "http://127.0.0.1:8792/index.html";
+  try { await navigator.clipboard.writeText(address); button.textContent = "已复制，请粘贴到浏览器地址栏"; }
+  catch { window.prompt("请复制地址，并粘贴到浏览器地址栏打开", address); }
+});
 document.querySelectorAll("[data-set][data-dir]").forEach(button => button.addEventListener("click", () => selectCard(button.dataset.set, cursor[button.dataset.set] + Number(button.dataset.dir))));
 
 const paths = {case:"核心案例 / Osmanthus", experience:"个人履历", about:"~/portfolio/about", product:"AI 产品", tool:"工具与工作台", notes:"公开文章", contact:"~/portfolio/contact"};

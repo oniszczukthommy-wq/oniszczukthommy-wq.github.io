@@ -28,3 +28,5 @@
 @media(max-width:900px){.interview-case-view{overflow:visible}.interview-case-scroll{height:auto;overflow:visible}}
 @media(max-width:620px){.interview-case{padding:24px 20px 45px}.case-hero{grid-template-columns:1fr;gap:22px;padding:32px 0}.case-brief{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}.case-brief-label{grid-column:1/-1}.case-grid-three,.case-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.case-tile{min-height:0}.case-section{padding:33px 0}.case-metrics strong{font-size:20px}.case-footer{align-items:start;flex-direction:column}.case-footer-links{gap:15px}.case-hero h1 em{font-size:.58em}}
 @media(max-width:380px){.case-grid-three,.case-flow,.case-metrics{grid-template-columns:1fr}.case-brief{grid-template-columns:1fr}}
+
+.case-launch{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:20px}.case-launch a{display:inline-flex;align-items:center;background:#2e75e8;color:#fff;border-radius:7px;padding:11px 15px;font-size:12px;font-weight:700;text-decoration:none}.case-launch a:hover{background:#205fc6}.case-launch span{font-size:11px;color:#6a7a8d}

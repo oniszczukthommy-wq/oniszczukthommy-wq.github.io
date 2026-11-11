@@ -15,6 +15,7 @@
               <h1>Osmanthus <em>音乐 MV 创作平台</em></h1>
               <p class="case-lead">从高校音乐创作需求出发，探索让 AI 走进创作、编辑与教学的工作流。</p>
               <div class="case-tags"><span>AI 产品经理</span><span>2023.09 — 2026.09</span><span>音智 AI 工作室</span></div>
+              <div class="case-launch"><a href="http://127.0.0.1:8792/index.html" target="_blank" rel="noopener noreferrer">打开音乐 MV 平台 ↗</a><span>本机演示 · 请先启动 MV 工作台</span></div>
             </div>
             <aside class="case-brief"><span class="case-brief-label">PROJECT SNAPSHOT</span><div><small>服务场景</small><strong>课堂作业 / 练习创作 / 教学示范</strong></div><div><small>我的角色</small><strong>8 人团队中的唯一产品岗</strong></div><div><small>产品形态</small><strong>合作高校内部限定部署</strong></div></aside>
           </header>
